@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HELLO, WELCOME TO BELQITE</title>
+
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/animation.css" />
+    <link rel="icon" href="./images/mew.svg" />
+
+    <script src="./javascript/first.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <img class="site-header__logo" src="images/header.svg" alt="belqite" />
+
+        <nav class="site-header__nav">
+          <a class="bro1" href="#about">/о нас/</a>
+          <a class="bro2" href="#portfolio">/портфолио/</a>
+          <a class="bro3" href="#services">/услуги/</a>
+          <a class="bro4" href="#faq">/FAQ/</a>
+          <a class="bro5" href="#contacts">/контакты/</a>
+        </nav>
+
+        <a class="site-header__cta" href="#order">/заказать креатив/</a>
+      </div>
+    </header>
+    <div class="bibi1">
+      <div class="hypno-frame">
+        <canvas id="bgCanvas"></canvas>
+        <div class="center-disc">
+          <canvas id="centerCanvas"></canvas>
+        </div>
+      </div>
+
+      <div class="center-anchor">
+        <div class="logo-parallax">
+          <img class="logo1" src="./images/logo.svg" alt="logo" />
+        </div>
+      </div>
+
+      <p class="go go1">(1) о нас</p>
+      <p class="go go2">(2) портфолио</p>
+      <p class="go go3">(3) услуги</p>
+      <p class="go go4">(4) FAQ</p>
+      <p class="go go5">(5) контакты</p>
+    </div>
+    <div class="perehod">
+      <div class="cloud-overlay">
+        <img class="lya" src="images/cloud.svg" alt="cloud1" />
+        <img class="hya" src="images/cloud.svg" alt="cloud1" />
+        <img class="half1" src="images/half1.png" alt="half1" />
+      </div>
+    </div>
+    <!-- плеер -->
+    <!-- плеер -->
+    <!-- плеер -->
+    <!-- плеер -->
+    <!-- плеер -->
+    <!-- плеер -->
+    <!-- плеер -->
+    <div class="player">
+      <h2 class="player-title">
+        Выбери музыку для настроения
+        <img class="iche" src="./images/iconheart.svg" alt="heart" />
+      </h2>
+      <img class="fon1" src="images/privet.svg" alt="" />
+      <div class="player-body">
+        <!-- громкость -->
+        <div class="volume">
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.6"
+            id="volumeRange"
+          />
+        </div>
+
+        <!-- кнопки -->
+        <div class="controls">
+          <button id="prevBtn" class="btn">
+            <img src="./images/prev.svg" alt="prev" />
+          </button>
+
+          <button id="playBtn" class="btn btn--big">
+            <img id="playIcon" src="./images/play.svg" alt="play / pause" />
+          </button>
+
+          <button id="nextBtn" class="btn">
+            <img src="./images/next.svg" alt="next" />
+          </button>
+        </div>
+
+        <audio id="audio"></audio>
+      </div>
+    </div>
+    <!-- ПРО НАААААААСССС -->
+
+    <p class="zag1">О НАС</p>
+    <img class="lya2" src="images/cloud.svg" alt="cloud1" />
+    <img class="half2" src="images/half1.png" alt="half1" />
+    <div class="player2">
+      <h2 class="player-title2">
+        Креативное агенство нового поколения
+        <img class="iche2" src="./images/iconheart.svg" alt="heart" />
+      </h2>
+      <img class="fon2" src="images/privet2.svg" alt="" />
+      <div class="player-body">
+        <p class="text-tahoma-30">
+          Belqite— креативное агентство, которое <br />
+          помогает бизнесам создавать сильные <br />
+          визуалы, чтобы отличаться в конкурентной <br />
+          среде. <br /><br />
+          Наша команда работает на стыке дизайна, <br />
+          стратегии и эмоций, превращая идеи клиентов <br />
+          в чёткий, узнаваемый стиль.
+        </p>
+      </div>
+    </div>
+
+    <!-- ПОРТФОЛИОООООООО -->
+
+    <p class="zag2">ПОРТФОЛИО</p>
+    <!-- PORTFOLIO GRID (шаблон как на скрине) -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__grid">
+        <!-- 1 -->
+        <a class="card" href="#">
+          <div class="card__imgwrap">
+            <img src="./images/port-1.jpg" alt="брендинг для пасеки «Медуша»" />
+          </div>
+          <div class="card__caption rus1">
+            брендинг для пасеки<br />«Медуша»
+          </div>
+        </a>
+
+        <!-- 2 -->
+        <a class="card" href="#">
+          <div class="card__imgwrap">
+            <img
+              src="./images/port-2.jpg"
+              alt="плакаты для школы балета для насекомых"
+            />
+          </div>
+          <div class="card__caption rus2">
+            плакаты для школы балета для насекомых
+          </div>
+        </a>
+
+        <!-- 3 -->
+        <a class="card" href="#">
+          <div class="card__imgwrap">
+            <img
+              src="./images/port-3.jpg"
+              alt="веб-плакат для школы балета для насекомых"
+            />
+          </div>
+          <div class="card__caption rus3">
+            веб-плакат для школы<br />балета для насекомых
+          </div>
+        </a>
+
+        <!-- 4 -->
+        <a class="card" href="#">
+          <div class="card__imgwrap">
+            <img
+              src="./images/port-4.jpg"
+              alt="игра для школы балета для насекомых"
+            />
+          </div>
+          <div class="card__caption rus4">
+            игра для школы балета<br />для насекомых
+          </div>
+        </a>
+
+        <!-- 5 -->
+        <a class="card" href="#">
+          <div class="card__imgwrap">
+            <img
+              src="./images/port-5.jpg"
+              alt="серия плакатов для зумерской тусовки"
+            />
+          </div>
+          <div class="card__caption rus5">
+            серия плакатов для<br />зумерской тусовки
+          </div>
+        </a>
+
+        <!-- 6 (кнопка “посмотреть ещё проекты”) -->
+        <a class="card card--more" href="#">
+          <div class="more__label">посмотреть<br />ещё проекты</div>
+        </a>
+      </div>
+    </section>
+    <!-- УСЛУГИ -->
+    <div class="sv" id="services">
+      <p class="zag3">УСЛУГИ</p>
+
+      <!-- 1. Брендинг и айдентика -->
+      <div class="sv-box bnd">
+        <p class="sv-h">Брендинг<br />и айдентика</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico1.svg" />
+          <p class="sv-t">Фирменный стиль</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico2.svg" />
+          <p class="sv-t">Tone of Voice</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico3.svg" />
+          <p class="sv-t">Ребрендинг</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico4.svg" />
+          <p class="sv-t">Логотипы</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico5.svg" />
+          <p class="sv-t">Мокапы</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico6.svg" />
+          <p class="sv-t">Нейминг</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico7.svg" />
+          <p class="sv-t">Позиционирование</p>
+        </div>
+      </div>
+
+      <!-- 2. Печатные материалы -->
+      <div class="sv-box prt">
+        <p class="sv-h">Печатные материалы<br />(макеты)</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico8.svg" />
+          <p class="sv-t">Верстка книг/журналов</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico9.svg" />
+          <p class="sv-t">Каталоги</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico10.svg" />
+          <p class="sv-t">Бирки, этикетки</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico11.svg" />
+          <p class="sv-t">Плакаты</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico12.svg" />
+          <p class="sv-t">Упаковка</p>
+        </div>
+      </div>
+
+      <!-- 3. Коммерческие материалы -->
+      <div class="sv-box com">
+        <p class="sv-h">Коммерческие<br />материалы</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico13.svg" />
+          <p class="sv-t">Презентации</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico14.svg" />
+          <p class="sv-t">Прайс-листы</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico15.svg" />
+          <p class="sv-t">Каталоги / меню</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico16.svg" />
+          <p class="sv-t">Инфографики</p>
+        </div>
+      </div>
+
+      <!-- 4. Креатив для маркетинга -->
+      <div class="sv-box mkt">
+        <p class="sv-h">Креатив<br />для маркетинга</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico17.svg" />
+          <p class="sv-t">Идеи кампаний</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico18.svg" />
+          <p class="sv-t">Концепты для соцсетей</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico19.svg" />
+          <p class="sv-t">Фирменные ритуалы</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico20.svg" />
+          <p class="sv-t">Идеи мероприятий</p>
+        </div>
+      </div>
+
+      <!-- 5. Сайты и веб-визуал -->
+      <div class="sv-box web">
+        <p class="sv-h">Сайты<br />и веб-визуал</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico21.svg" />
+          <p class="sv-t">Лендинги</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico22.svg" />
+          <p class="sv-t">Сайты (code / no-code)</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico23.svg" />
+          <p class="sv-t">Редизайн</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico24.svg" />
+          <p class="sv-t">Баннеры</p>
+        </div>
+      </div>
+
+      <!-- 6. Социальные сети -->
+      <div class="sv-box soc">
+        <p class="sv-h">Социальные<br />сети</p>
+
+        <div class="sv-row">
+          <img class="ic" src="./images/ico25.svg" />
+          <p class="sv-t">Посты / сторис</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico26.svg" />
+          <p class="sv-t">Пакеты оформлений</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico27.svg" />
+          <p class="sv-t">Рекламные визуалы</p>
+        </div>
+        <div class="sv-row">
+          <img class="ic" src="./images/ico28.svg" />
+          <p class="sv-t">Контент-план</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

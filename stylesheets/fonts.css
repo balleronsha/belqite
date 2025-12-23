@@ -1,0 +1,75 @@
+/* JetBrainsMono */
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: local('JetBrains Mono Regular'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: local('JetBrains Mono Medium'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: local('JetBrains Mono Bold'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: local('JetBrains Mono Italic'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('fonts/JetBrainsMono/JetBrainsMono-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: local('JetBrains Mono Bold Italic'),
+    url('fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2') format('woff2'),
+    url('fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Tahoma */
+/* Tahoma */
+/* Tahoma */
+/* Tahoma */
+/* Tahoma */
+/* Tahoma */
+
+@font-face {
+  font-family: 'Tahoma';
+  src: local('Tahoma'), url('../fonts/Tahoma.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tahoma';
+  src: local('Tahoma Bold'), url('../fonts/Tahoma\ Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelsaDisplay';
+  src: local('Helsa Display'),
+    url('../fonts/helsa-display.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

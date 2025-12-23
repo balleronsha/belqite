@@ -1,0 +1,73 @@
+:root {
+  --mx: 0px;
+  --my: 0px;
+}
+
+.logo-parallax,
+.go,
+.lya,
+.hya,
+.half1 {
+  will-change: transform, opacity;
+}
+
+.logo-parallax,
+.go {
+  transition: transform 100ms ease-out;
+}
+
+.logo-parallax {
+  transform: translate3d(calc(var(--mx) * -1.2), calc(var(--my) * -1.2), 0);
+}
+
+.go1 {
+  transform: translate3d(calc(var(--mx) * -0.6), calc(var(--my) * -0.6), 0);
+}
+.go2 {
+  transform: translate3d(calc(var(--mx) * -0.7), calc(var(--my) * -0.7), 0);
+}
+.go3 {
+  transform: translate3d(calc(var(--mx) * -0.8), calc(var(--my) * -0.8), 0);
+}
+.go4 {
+  transform: translate3d(calc(var(--mx) * -0.9), calc(var(--my) * -0.9), 0);
+}
+.go5 {
+  transform: translate3d(calc(var(--mx) * -1), calc(var(--my) * -1), 0);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-anchor:hover .logo1 {
+  animation: logo-spin 0.8s linear infinite;
+}
+
+.lya,
+.hya,
+.half1 {
+  opacity: 0;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease;
+}
+
+.lya {
+  transform: translateX(-18vw);
+}
+
+.hya,
+.half1 {
+  transform: translateX(18vw);
+}
+
+.cloud-overlay.is-visible .lya,
+.cloud-overlay.is-visible .hya,
+.cloud-overlay.is-visible .half1 {
+  transform: translateX(0);
+  opacity: 1;
+}
