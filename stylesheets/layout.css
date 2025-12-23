@@ -619,7 +619,7 @@ canvas {
   position: relative;
   width: 100vw;
   padding: 5vw 5vw 5vw;
-  background-image: url(/images/background.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: 130vw;
   background-position: center;
@@ -755,4 +755,8 @@ canvas {
 .cta-a:hover {
   transform: translateY(-0.15vw);
   background: #ff7723;
+}
+.prt {
+  position: absolute;
+  top: 50vw;
 }
