@@ -615,15 +615,15 @@ canvas {
 }
 /* ===== SERVICES (sv) ===== */
 .sv {
-  top: -130vw;
   position: relative;
   width: 100vw;
-  padding: 5vw 5vw 5vw;
+  padding: 5vw;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: 130vw;
   background-position: center;
   overflow: visible;
+  top: -135vw;
 }
 
 /* большой заголовок */
@@ -631,8 +631,8 @@ canvas {
   text-align: center;
   margin: 0 0 4.2vw;
   position: relative;
+  z-index: 10;
 
-  z-index: 80;
   font-family: 'HelsaDisplay';
   font-size: 11.442vw;
   color: #fff;
@@ -640,21 +640,20 @@ canvas {
   paint-order: stroke fill;
 }
 
-/* сетка */
+/* контейнер координат (ВАЖНО!) */
 .sv-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr 1fr 1fr;
-  gap: 3.2vw 3.2vw;
-  align-items: start;
+  position: relative; /* якорь для absolute блоков */
+  width: 100%;
+  min-height: 70vw; /* чтобы секция не “схлопывалась” */
 }
 
-/* колонка */
-.sv-col {
-  position: relative;
+/* общий вид блока */
+.sv-box {
+  position: absolute;
+  width: 22vw; /* можешь менять */
 }
 
-/* заголовки колонок (чёрные плашки) */
+/* заголовки (чёрные плашки) */
 .sv-h {
   margin-bottom: 0.9vw;
   display: inline-block;
@@ -668,19 +667,14 @@ canvas {
   border-radius: 0.2vw;
 }
 
-.sv-h.mtop {
-  margin-top: 3.2vw;
-}
-
-/* строка услуги */
+/* строка */
 .sv-row {
   display: flex;
   align-items: center;
   gap: 0.9vw;
-  margin: -0.5vw 0 1.25vw;
+  margin: 0 0 1.1vw;
 }
 
-/* иконка */
 .ic {
   width: 2.25vw;
   height: 2.25vw;
@@ -689,89 +683,58 @@ canvas {
   flex: 0 0 auto;
 }
 
-/* текст услуги */
 .sv-t {
+  margin: 0;
   font-family: Tahoma, sans-serif;
   font-size: 1.25vw;
   line-height: 1.05;
   color: #141212;
+}
+.sv-t03 {
   margin: 0;
-}
-
-/* ===== CTA блок справа снизу ===== */
-.sv-cta {
-  grid-column: 3 / 5;
-  margin-top: 2.5vw;
-  justify-self: end;
-
-  width: 38vw;
-  padding: 2.2vw 2.4vw;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 1.2vw;
-}
-
-/* заголовок CTA */
-.cta-h {
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  font-size: 3.2vw;
-  line-height: 0.95;
-  margin: 0 0 1.2vw;
-  color: #141212;
-}
-
-/* текст CTA */
-.cta-t {
   font-family: Tahoma, sans-serif;
-  font-size: 1.45vw;
-  line-height: 1.2;
-  margin: 0 0 1.6vw;
+  font-size: 1.716vw;
+  line-height: 1.05;
   color: #141212;
 }
-
-/* кнопка CTA */
-.cta-btn {
-  margin: 0;
-}
-
-.cta-a {
+.sv-t02 {
   display: inline-block;
+  -webkit-text-stroke: 0.9vw #000000;
+  paint-order: stroke fill;
+  color: #fff;
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  font-size: 1.35vw;
-  line-height: 1;
-  color: #141212;
-  text-decoration: none;
-
-  padding: 0.9vw 1.3vw;
-  border-radius: 999vw;
-
-  background: #efefef;
-  border: 0.15vw solid #141212;
-  box-shadow: 0 0.35vw 0 rgba(0, 0, 0, 0.25);
-  transition: transform 220ms ease, background-color 220ms ease;
+  font-size: 2.86vw;
+  line-height: 90%;
+  border-radius: 0.2vw;
 }
-
-.cta-a:hover {
-  transform: translateY(-0.15vw);
-  background: #ff7723;
-}
-.prt {
-  position: absolute;
-  top: 48vw;
+/* ===== КООРДИНАТЫ (правь как хочешь) ===== */
+.bnd {
+  top: 0vw;
+  left: 0vw;
 }
 .com {
-  position: absolute;
-  top: 21vw;
-  left: 28vw;
-}
-.mkt {
-  position: absolute;
-  top: 48vw;
-  left: 28vw;
+  top: 0vw;
+  left: 26vw;
 }
 .web {
-  position: absolute;
-  top: 21vw;
-  left: 53vw;
+  top: 0vw;
+  left: 50vw;
+}
+.soc {
+  top: 0vw;
+  left: 75vw;
+}
+
+.prt {
+  top: 33vw;
+  left: 0vw;
+}
+.mkt {
+  top: 33vw;
+  left: 26vw;
+}
+.cow {
+  left: 55vw;
+  top: 30vw;
+  width: 100%;
 }
