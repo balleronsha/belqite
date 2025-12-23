@@ -758,5 +758,20 @@ canvas {
 }
 .prt {
   position: absolute;
-  top: 50vw;
+  top: 48vw;
+}
+.com {
+  position: absolute;
+  top: 21vw;
+  left: 28vw;
+}
+.mkt {
+  position: absolute;
+  top: 48vw;
+  left: 28vw;
+}
+.web {
+  position: absolute;
+  top: 21vw;
+  left: 53vw;
 }
